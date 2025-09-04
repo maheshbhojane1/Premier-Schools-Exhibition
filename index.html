@@ -6,7 +6,6 @@
   <title>Premier Schools Exhibition</title>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
 
   <link rel="stylesheet" href="styles.css"/>
 </head>
@@ -367,6 +366,57 @@
     
   </section>
 
+  <div class="video-section">
+    <h2>What Makes Parents Choose Us</h2>
+    <div class="cards">
+      <div class="section-card">
+        <img src="./images/Parents1.svg" alt="Woman in white coat standing at an indoor event with people and banners in background">
+        <div class="label">
+          <i class="fas fa-play-circle"></i>
+          <span>Visitor's Review</span>
+        </div>
+      </div>
+
+      <div class="section-card">
+        <img src="./images/Parents2.svg" alt="Woman in yellow saree with glasses standing at an indoor event with people and banners in background">
+        <div class="label">
+          <i class="fas fa-play-circle"></i>
+          <span>Visitor's Review</span>
+        </div>
+      </div>
+
+      <div class="section-card">
+        <img src="./images/Parents3.svg" alt="Man in blue jacket standing at an indoor event with people and banners in background">
+        <div class="label">
+          <i class="fas fa-play-circle"></i>
+          <span>Visitor's Review</span>
+        </div>
+      </div>
+
+      <div class="section-card">
+        <img src="./images/parents4.svg" alt="Man and woman standing together at an indoor event with people and banners in background">
+        <div class="label">
+          <i class="fas fa-play-circle"></i>
+          <span>Visitor's Review</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="gallery-container">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="https://storage.googleapis.com/a1aa/image/3459dcf5-6017-40ca-dc52-5220754453a4.jpg" 
+           alt="Group of people at an event with decorative lights and children posing in front">
+
+      <img src="https://storage.googleapis.com/a1aa/image/4c1c98dd-28c8-4c5c-aefe-5f75b46093a4.jpg" 
+           alt="Three girls holding a decorative frame with LG logo in an indoor setting">
+
+      <img src="https://storage.googleapis.com/a1aa/image/784f10bb-b09a-4284-7bed-d535e93e511c.jpg" 
+           alt="Red carpet event with decorations and people in background">
+    </div>
+  </div>
+
   <footer class="footer">
       <div class="footer-container">
         <div class="footer-section logo-section">
@@ -432,29 +482,6 @@
       </div>
     </footer>
 
-    <script >
-
-      const slider = document.getElementById('slider');
-    const nextBtn = document.getElementById('nextBtn');
-    const prevBtn = document.getElementById('prevBtn');
-
-    function getCardWidth() {
-      const card = slider.querySelector('article');
-      const style = window.getComputedStyle(card);
-      const width = card.offsetWidth;
-      const marginRight = parseInt(style.marginRight) || 16;
-      return width + marginRight;
-    }
-
-    nextBtn.addEventListener('click', () => {
-      const cardWidth = getCardWidth();
-      slider.scrollBy({ left: cardWidth, behavior: 'smooth' });
-    });
-
-    prevBtn.addEventListener('click', () => {
-      const cardWidth = getCardWidth();
-      slider.scrollBy({ left: -cardWidth, behavior: 'smooth' });
-    });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
