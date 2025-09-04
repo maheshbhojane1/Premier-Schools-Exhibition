@@ -502,7 +502,7 @@ body {
 }
 .logos-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 1rem;
   flex: 0 0 100%;
   gap: 20px;
@@ -558,11 +558,7 @@ body {
   }
 }
 
-@media (min-width: 768px) {
-  .logos-grid {
-    grid-template-columns: repeat(2, fr);
-  }
-}
+
 
 .logo-box:hover.logos-grid {
   animation-play-state: paused;
@@ -638,8 +634,8 @@ body {
 
 @media (min-width: 640px) {
   .grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 80px;
+    grid-template-columns: repeat(4, 1fr);
+    
   }
 }
 
